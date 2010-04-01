@@ -1,0 +1,7 @@
+start nginx
+
+nginx -c /Users/danlucraft/Songkick/nginx-tests/nginx.conf
+
+stop nginx
+
+nginx -c /Users/danlucraft/Songkick/nginx-tests/nginx.conf -s stop
