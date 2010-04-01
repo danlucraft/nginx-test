@@ -1,8 +1,7 @@
 # MODULE
 
-#\ -w -p 8095
-use Rack::Reloader, 0
-use Rack::ContentLength
+#use Rack::Reloader, 0
+#use Rack::ContentLength
 
 SRC=<<-HTML
   <div>
@@ -11,7 +10,8 @@ SRC=<<-HTML
 HTML
 
 app = proc do |env|
-  [ 200, {'Content-Type' => 'text/html'}, SRC ]
+  sleep 1
+  [ 500, {'Content-Type' => 'text/html'}, SRC ]
 end
 
 run app

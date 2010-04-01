@@ -1,14 +1,16 @@
 # MASTER
 
 #\ -w -p 8085
-use Rack::Reloader, 0
-use Rack::ContentLength
+#use Rack::Reloader, 0
+#use Rack::ContentLength
 
 SRC=<<-HTML
 <html>
 <body>
    Hi<br />
-    <!--# include virtual="/remote" -->
+    <!--# include virtual="/remote/1" -->
+    <!--# include virtual="/remote/2" -->
+    <!--# include virtual="/remote/3" -->
   There.
 </body>
 </html>
